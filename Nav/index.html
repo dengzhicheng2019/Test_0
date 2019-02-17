@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>导航页面</title>
+		
+		<style type="text/css">
+			/*第三个属性去掉a标签的下划线效果*/
+			*{margin:0; padding:0; text-decoration:none; border:0;}
+			body{background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1550401742979&di=aea593f2b53ed144aa0c950735c5dbc1&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn10%2F600%2Fw1920h1080%2F20180515%2Fc5a4-hapkuvm0037666.jpg);
+			     background-size:cover; transition:2s;}
+			/*收起页和背景图切换*/    
+			#MrH{position:relative; top:5px; width:70%; margin:0 auto; z-index:1;}
+			#MrH img{position:relative; width:100%; height:0; z-index:1;}
+			#MrH p{position:absolute; display:inline-block; background-color:#000; opacity:0.8; width:50px; height:25px; line-height:25px; text-align:center; bottom:5px; right:5px; z-index:10; color:#fff; cursor:pointer; transition:1s;}
+			#MrH p:hover{opacity:1;}
+			#button{display:inline-block; width:100px; height:50px; position:fixed; right:50px; top:20px; opacity:0.7;color:#fff; cursor:pointer;}
+            #next{position:relative; float:right; width:50px; text-align:center; line-height:50px; font-size:25px; right:0; background-color:#000;}
+			#next:hover{opacity:0.9;}
+			#prev{position:relative; float:left; width:50px; text-align:center; line-height:50px; font-size:25px; left:0; background-color:#000;}
+			#prev:hover{opacity:0.9;}
+			/*主页和页尾信息*/
+			#box{width:70%; height:200px; margin:20px auto; box-shadow:0 0 20px #000 inset; transition:0.2s;}
+			#box:hover{background-color:#000; opacity: 0.7;}
+			#box p{line-height:200px; text-align: center; font-size:72px; color:#000;}
+			#box a:hover p{color:#fff;}
+			#vice-box{width:70%; margin:20px auto; transition:0.2s;}
+            #limit{width:100%; overflow:hidden;}
+            #site{width:24%; height:150px; float:left; margin-left:0.5%; margin-right:0.5%; margin-top:5px; margin-bottom:5px; box-shadow:0 0 20px #000 inset; transition:1s;}
+			#site:hover{background-color:#000; opacity: 0.7;}
+			#site p{line-height:150px; text-align:center; font-size:36px; color:#000;}
+			#site a:hover p{color:#fff;}
+			#contact{width:80%; height:50px; margin:0 auto;}
+			#name{display:block; width:0%; line-height:50px; margin:0 auto; text-align:center; color:#000; font:15px; transition:2s; cursor:pointer;}
+            #name:hover{color:#fff;}
+		</style>
+		<!--<link rel="stylesheet" href="" type="text/css" />-->
+		<script type="text/javascript" src="js/user.js"></script>
+	</head>
+	
+	<body id="page">
+		<!--隐藏入口-->
+		<div id="MrH">
+			<a href="https://github.com/dengzhicheng2019/Test_0" target="_blank" >
+				<img title="点击进入我的GitHub" id="photo" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1550994208&di=09fde39adb00556970e9aa78f4e15bda&imgtype=jpg&er=1&src=http%3A%2F%2Fcrawl.nosdn.127.net%2Fimg%2Fc598aa0d134f26f4c6a9eb34328aa82c.jpg">
+			</a>
+		    <p id="hiden">hiden</p>
+		</div>
+		<!--背景图片切换-->
+		<div id="button">
+			<p id="next" title="下一张背景图">></p>
+		    <p id="prev" title="上一张背景图"><</p>
+		</div>
+		<!--标题首页-->
+		<div id="box">
+			<a href="http://www.baidu.com/" target="_blank"><p>Baidu</p></a>
+		</div>
+		<!--主页内容-->
+		<div id="vice-box">
+			<div id="limit">
+				<div id="site">
+		        	<a href="https://github.com/" target="_blank"><p>GitHub</p></a>
+		        </div>
+			    <div id="site">
+		        	<a href="https://www.w3cschool.cn/" target="_blank"><p>W3Cschool</p></a>
+		        </div>
+		        <div id="site">
+		        	<a href="https://www.imooc.com/course/landingpagephp?from=phpkecheng" target="_blank"><p>慕课网</p></a>
+		        </div>
+		        <div id="site">
+		        	<a href="https://www.nowcoder.com/" target="_blank"><p>牛客网</p></a>
+		        </div>
+		        <div id="site">
+		        	<a href="https://www.csdn.net/" target="_blank"><p>CSDN</p></a>
+		        </div>
+		        <div id="site">
+		        	<a href="http://www.itcast.cn/subject/javaeezly/?jingjia-01-chuanzhi-pinpaici-pc-chuanzhi" target="_blank"><p>传智播客</p></a>
+		        </div>
+		        <div id="site">
+		        	<a href="http://www.codeceo.com/" target="_blank"><p>码农网</p></a>
+		        </div>
+		        <div id="site">
+		        	<a href="https://www.githubs.cn/" target="_blank"><p>GitHub社区</p></a>
+		        </div>
+		        <div id="site">
+		        	<a href="https://adobe-dreamweaver.en.softonic.com/" target="_blank"><p>Dreamweaver CS6</p></a>
+		        </div>
+		        <div id="site">
+		        	<a href="http://www.dcloud.io/" target="_blank"><p>HBuilder</p></a>
+		        </div>
+		        <div id="site">
+		        	<a href="http://www.sublimetext.com/" target="_blank"><p>Sublime Text3</p></a>
+		        </div>
+		        <div id="site">
+		        	<a href="http://www.jetbrains.com/webstorm/" target="_blank"><p>WebStorm</p></a>	
+				</div>
+			</div>
+		</div>
+		<!--页尾联系信息-->
+		<div id="contact">
+			<p id="name">
+				Made By Mr.D<br />
+			QQ:2629009736(点击我)<br />
+			邮箱:dengzhicheng2018@163.com</p>
+		</div>
+	</body>
+</html>
